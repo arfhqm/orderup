@@ -1,0 +1,109 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 1726 >>
+stream
+BT
+/F1 22 Tf
+56 786 Td
+(OrderUp Café POS - Live Screenshot Checklist) Tj
+-56 -786 Td
+/F1 15 Tf
+56 760 Td
+(Screen 1 - Cashier Menu) Tj
+-56 -760 Td
+/F1 10 Tf
+56 740 Td
+(Left panel shows seeded café menu grouped by Drinks, Food, and Desserts.) Tj
+-56 -740 Td
+/F1 10 Tf
+56 724 Td
+(Tapping any item adds it to the active cart.) Tj
+-56 -724 Td
+/F1 15 Tf
+56 700 Td
+(Screen 2 - Cart and AI Add-on) Tj
+-56 -700 Td
+/F1 10 Tf
+56 680 Td
+(Middle panel captures table number, order type, payment method, quantities, and kitchen note) Tj
+-56 -680 Td
+/F1 10 Tf
+56 664 Td
+(s.) Tj
+-56 -664 Td
+/F1 10 Tf
+56 648 Td
+(AI add-on card appears after cart changes and shows the recommendation source.) Tj
+-56 -648 Td
+/F1 15 Tf
+56 624 Td
+(Screen 3 - Kitchen Board) Tj
+-56 -624 Td
+/F1 10 Tf
+56 604 Td
+(Right panel lists live orders with item notes and status chips.) Tj
+-56 -604 Td
+/F1 10 Tf
+56 588 Td
+(Next Status moves tickets through PENDING, PREPARING, READY, and COMPLETED.) Tj
+-56 -588 Td
+/F1 15 Tf
+56 564 Td
+(Screen 4 - Payments and Split Bills) Tj
+-56 -564 Td
+/F1 10 Tf
+56 544 Td
+(Pay captures the remaining amount as one payment.) Tj
+-56 -544 Td
+/F1 10 Tf
+56 528 Td
+(Split 2 and Split 3 divide the remaining bill into multiple Payment records.) Tj
+-56 -528 Td
+/F1 15 Tf
+56 504 Td
+(Capture Instructions) Tj
+-56 -504 Td
+/F1 10 Tf
+56 484 Td
+(Run the app at http://localhost:4200, capture the four screens above, and export them into t) Tj
+-56 -484 Td
+/F1 10 Tf
+56 468 Td
+(his PDF for final submission.) Tj
+-56 -468 Td
+/F1 10 Tf
+56 452 Td
+(This file is intentionally a checklist, because real screenshots should be captured from the) Tj
+-56 -452 Td
+/F1 10 Tf
+56 436 Td
+( live app after MySQL, Spring Boot, and Angular are running.) Tj
+-56 -436 Td
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000185 00000 n 
+0000000311 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+2089
+%%EOF

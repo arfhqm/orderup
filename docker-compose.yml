@@ -1,0 +1,14 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: orderup-mysql
+    environment:
+      MYSQL_DATABASE: orderup_db
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3306:3306"
+    volumes:
+      - orderup_mysql:/var/lib/mysql
+
+volumes:
+  orderup_mysql:

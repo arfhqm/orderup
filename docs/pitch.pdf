@@ -1,0 +1,121 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 1905 >>
+stream
+BT
+/F1 22 Tf
+56 786 Td
+(OrderUp Café POS - Pitch) Tj
+-56 -786 Td
+/F1 15 Tf
+56 760 Td
+(Problem) Tj
+-56 -760 Td
+/F1 10 Tf
+56 740 Td
+(Small cafés often juggle handwritten tickets, edited orders, split payments, and kitchen upd) Tj
+-56 -740 Td
+/F1 10 Tf
+56 724 Td
+(ates manually.) Tj
+-56 -724 Td
+/F1 10 Tf
+56 708 Td
+(Generic POS demos usually look polished but skip the awkward real-life cases that staff actu) Tj
+-56 -708 Td
+/F1 10 Tf
+56 692 Td
+(ally handle.) Tj
+-56 -692 Td
+/F1 15 Tf
+56 668 Td
+(Solution) Tj
+-56 -668 Td
+/F1 10 Tf
+56 648 Td
+(OrderUp is a compact Angular + Spring Boot + MySQL POS for café service.) Tj
+-56 -648 Td
+/F1 10 Tf
+56 632 Td
+(Cashiers can take and edit orders, kitchen staff can progress ticket status, and bills can b) Tj
+-56 -632 Td
+/F1 10 Tf
+56 616 Td
+(e paid or split.) Tj
+-56 -616 Td
+/F1 15 Tf
+56 592 Td
+(AI Feature) Tj
+-56 -592 Td
+/F1 10 Tf
+56 572 Td
+(The cart-based add-on recommender checks the live cart against the real menu and suggests a ) Tj
+-56 -572 Td
+/F1 10 Tf
+56 556 Td
+(missing category.) Tj
+-56 -556 Td
+/F1 10 Tf
+56 540 Td
+(It works locally without an API key, and can optionally use OpenAI to polish the wording.) Tj
+-56 -540 Td
+/F1 15 Tf
+56 516 Td
+(Why It Is Explainable) Tj
+-56 -516 Td
+/F1 10 Tf
+56 496 Td
+(The backend has simple entities: MenuItem, Order, OrderItem, and Payment.) Tj
+-56 -496 Td
+/F1 10 Tf
+56 480 Td
+(Business logic lives in one OrderService and one AiRecommendationService.) Tj
+-56 -480 Td
+/F1 10 Tf
+56 464 Td
+(The Angular frontend is one focused POS screen backed by a small API service.) Tj
+-56 -464 Td
+/F1 15 Tf
+56 440 Td
+(Demo Flow) Tj
+-56 -440 Td
+/F1 10 Tf
+56 420 Td
+(Start MySQL with docker compose, run Spring Boot, then run Angular.) Tj
+-56 -420 Td
+/F1 10 Tf
+56 404 Td
+(Add Latte and Croissant, accept the AI add-on suggestion, send to kitchen, move status, then) Tj
+-56 -404 Td
+/F1 10 Tf
+56 388 Td
+( split payment.) Tj
+-56 -388 Td
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000185 00000 n 
+0000000311 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+2268
+%%EOF

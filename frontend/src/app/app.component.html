@@ -1,0 +1,98 @@
+<main class="shell">
+  <header class="hero">
+    <div>
+      <p class="eyebrow">OrderUp Café POS</p>
+      <h1>Take orders, send tickets, split bills.</h1>
+    </div>
+    <button class="ghost" (click)="loadData()">Refresh</button>
+  </header>
+
+  <section class="grid">
+    <section class="panel menu">
+      <h2>Menu</h2>
+      <div class="category" *ngFor="let category of categories">
+        <h3>{{ category }}</h3>
+        <button class="menu-card" *ngFor="let item of menuByCategory(category)" (click)="addToCart(item)">
+          <span>
+            <strong>{{ item.name }}</strong>
+            <small>{{ item.description }}</small>
+          </span>
+          <b>RM {{ item.price | number:'1.2-2' }}</b>
+        </button>
+      </div>
+    </section>
+
+    <section class="panel cart">
+      <h2>{{ editingOrderId ? 'Edit Order #' + editingOrderId : 'New Order' }}</h2>
+      <div class="row">
+        <label>Table <input [(ngModel)]="tableNo"></label>
+        <label>Type
+          <select [(ngModel)]="orderType">
+            <option value="DINE_IN">Dine in</option>
+            <option value="TAKEAWAY">Takeaway</option>
+          </select>
+        </label>
+        <label>Pay by
+          <select [(ngModel)]="paymentMethod">
+            <option value="CASH">Cash</option>
+            <option value="CARD">Card</option>
+            <option value="E_WALLET">E-wallet</option>
+          </select>
+        </label>
+      </div>
+
+      <p class="empty" *ngIf="!cart.length">Tap menu items to build the cart.</p>
+      <div class="cart-item" *ngFor="let item of cart; let index = index">
+        <div>
+          <strong>{{ item.menuItem.name }}</strong>
+          <input placeholder="Kitchen note" [(ngModel)]="item.notes">
+        </div>
+        <input type="number" min="1" [(ngModel)]="item.quantity">
+        <button class="danger" (click)="removeFromCart(index)">Remove</button>
+      </div>
+
+      <aside class="ai" *ngIf="recommendation">
+        <strong>AI add-on</strong>
+        <p>{{ recommendation.suggestion }}</p>
+        <small>Source: {{ recommendation.source }}</small>
+      </aside>
+
+      <div class="total">
+        <span>Total</span>
+        <strong>RM {{ cartTotal | number:'1.2-2' }}</strong>
+      </div>
+      <button class="primary" (click)="saveOrder()">{{ editingOrderId ? 'Update order' : 'Send to kitchen' }}</button>
+      <button class="ghost" (click)="clearCart()">Clear</button>
+      <p class="message">{{ message }}</p>
+    </section>
+
+    <section class="panel orders">
+      <h2>Orders & Kitchen</h2>
+      <article class="order" *ngFor="let order of orders">
+        <header>
+          <div>
+            <strong>#{{ order.id }} · {{ order.tableNo || 'Takeaway' }}</strong>
+            <small>{{ order.orderType }} · {{ order.paymentStatus }}</small>
+          </div>
+          <span class="status">{{ order.status }}</span>
+        </header>
+
+        <ul>
+          <li *ngFor="let item of order.orderItems">
+            {{ item.quantity }}× {{ item.menuItem.name }}
+            <em *ngIf="item.notes">({{ item.notes }})</em>
+          </li>
+        </ul>
+
+        <footer>
+          <strong>RM {{ order.totalAmount | number:'1.2-2' }}</strong>
+          <button (click)="editOrder(order)" [disabled]="order.paymentStatus !== 'UNPAID'">Edit</button>
+          <button (click)="nextStatus(order)" [disabled]="order.status === 'COMPLETED'">Next status</button>
+          <button (click)="pay(order, 1)" [disabled]="order.paymentStatus === 'PAID'">Pay</button>
+          <button (click)="pay(order, 2)" [disabled]="order.paymentStatus === 'PAID'">Split 2</button>
+          <button (click)="pay(order, 3)" [disabled]="order.paymentStatus === 'PAID'">Split 3</button>
+        </footer>
+      </article>
+    </section>
+  </section>
+</main>
