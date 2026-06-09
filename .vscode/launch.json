@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-OrderupApplication<orderup>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.orderup.OrderupApplication",
+            "projectName": "orderup",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
