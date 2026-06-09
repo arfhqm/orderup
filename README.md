@@ -1,6 +1,6 @@
-# OrderUp - Small Café POS
+# OrderUp - Small Cafe POS
 
-OrderUp is a simple full-stack POS system for a small café. It handles real café workflows: taking orders, editing unpaid orders, sending orders to the kitchen, updating kitchen status, taking payments, splitting bills, and showing practical AI add-on suggestions.
+OrderUp is a simple full-stack POS system for a small cafe. It handles real cafe workflows: taking orders, editing unpaid orders, sending orders to the kitchen, updating kitchen status, taking payments, splitting bills, and showing practical AI add-on suggestions.
 
 ## Tech Stack
 
@@ -18,7 +18,7 @@ OrderUp is a simple full-stack POS system for a small café. It handles real caf
 - Track order status: `PENDING -> PREPARING -> READY -> COMPLETED`
 - Accept cash, card, or e-wallet payments
 - Split bills 2 or 3 ways
-- Auto-seed café menu items
+- Auto-seed cafe menu items
 - Suggest cart-based add-ons using real menu data
 
 ## Quick Start
@@ -30,9 +30,7 @@ You need:
 - Node.js + npm
 - MySQL running locally
 
-Docker is not required for this project. It is only an optional shortcut for running MySQL.
-
-If you already have MySQL installed on your computer, you can ignore Docker completely.
+Docker is not required for this project. The app runs directly using local MySQL.
 
 ## 1. Prepare MySQL
 
@@ -95,21 +93,7 @@ Frontend URL:
 http://localhost:4200
 ```
 
-## Optional: Run MySQL With Docker
-
-Only use this if Docker Desktop is installed:
-
-```powershell
-docker compose up -d
-```
-
-Then run the backend and frontend using the same steps above.
-
 ## Common Problems
-
-### `docker is not recognized`
-
-Docker is not installed or not available in PATH. This is fine. Use local MySQL instead.
 
 ### `Public Key Retrieval is not allowed`
 
@@ -209,4 +193,4 @@ npm run build
 
 ## Pitch
 
-OrderUp is intentionally small and easy to explain: one Spring Boot backend, one Angular POS screen, MySQL storage, and one useful AI feature. It focuses on real café operations instead of fake dashboard mockups.
+OrderUp is intentionally small and easy to explain: one Spring Boot backend, one Angular POS screen, MySQL storage, and one useful AI feature. It focuses on real cafe operations instead of fake dashboard mockups.

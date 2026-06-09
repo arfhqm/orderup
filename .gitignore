@@ -1,7 +1,9 @@
-target/
+/target/
 frontend/node_modules/
 frontend/dist/
 frontend/.angular/
+/orderup-frontend/
+/scripts/
 .idea/
 .vscode/
 *.log
